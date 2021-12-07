@@ -39,7 +39,7 @@ $dbh = db_conn();
 $data = [];
 
 try{
-    $sql = "SELECT * FROM user LIMIT 1, 5";
+    $sql = "SELECT * FROM user LIMIT 1, 3";
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(':name', '%'.$name.'%', PDO::PARAM_STR);
     $stmt->bindValue(':start', $start, PDO::PARAM_INT); 
