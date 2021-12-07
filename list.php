@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
            // 例：２ページ目の場合は、『(2ページ目 × 最大表示件数) - 最大表示件数 = 5』 
 
-        $start = ($page * 8) - 8;   // $start変数に設定 
+        $start = ($page * 5) - 5;   // $start変数に設定 
 
     } else { 
 
